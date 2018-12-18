@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galeria de Imágenes y efectos SVG</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <main>
+    
+      <header>
+        <h1 align="center">GRILLA DE IMÁGENES Y EFECTOS SVG</h1>
+      </header>
+      
+            <div class="warning">Este ejemplo solo funciona en navegadores que soportan CSS Grid Layout. Si puedes ver este mensaje, tu navegador no soporta esta herramienta </div>
+            
+      <ul>
+        <li tabindex="0" class="sepia highlight-wide"><img  src="images/eva-01-wide.jpg" /></li>
+        <li tabindex="0" class="grayscale highlight-tall"><img src="images/eva-03-tall.jpg" /></li> 	
+		<li tabindex="0" class="gauss highlight-box"><img src="images/eva-04-box.jpg" /></li> 
+		<li tabindex="0" class="highlight-wide"><img src="images/eva-05-wide.jpg" /></li> 
+		<li tabindex="0" ><img src="images/eva-05-normal.jpg" /></li> 
+		<li tabindex="0" ><img src="images/eva-06-normal.jpg" /></li> 
+		<li tabindex="0" ><img src="images/eva-07-normal.jpg" /></li> 
+		<li tabindex="0" ><img src="images/eva-08-normal.jpg" /></li> 
+		<li tabindex="0"><img src="images/eva-09-box.jpg" /></li> 
+		<li tabindex="0" class="highlight-box"><img src="images/eva-09-wide.png" /></li> 
+		<li tabindex="0" class="highlight-tall"><img src="images/eva-10-tall.jpg" /></li> 
+		<li tabindex="0" class="highlight-box"><img src="images/eva-11-box.jpg" /></li>
+		<li tabindex="0" class="highlight-tall"><img src="images/eva-11-tall.jpg" /></li>
+		<li tabindex="0" class="highlight-wide"><img src="images/eva-12-wide.jpg" /></li>
+		<li tabindex="0" class=""><img src="images/eva-13-normal.jpg" /></li>
+		<li tabindex="0" class="highlight-wide"><img src="images/eva-14-wide.jpg" /></li>
+      
+      </ul>
+    </main>
+
+
+  </body>
+</html>
+
+
+<svg>
+  <filter id="pictureFilter" >
+    <feGaussianBlur stdDeviation="10" />
+  </filter> 
+  <filter id="erode">
+      <feMorphology operator="erode" radius="3"></feMorphology>
+    </filter>
+</svg>
