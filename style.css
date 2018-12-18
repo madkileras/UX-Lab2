@@ -3,13 +3,18 @@ html {
   font-size: 18px; }
   
 body{
-  background: black;
+	
+	background:url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
 }	
 
 h1 {
   font-family: 'BauerBodoniW01-BoldDisp', georgia, serif;
-  font-size: 2rem;
-  color: red;
+  font-size: 3rem;
+  color: white;
   margin: 0;
   padding: 0.75em 0.25em;
   background: #black;
@@ -42,6 +47,9 @@ li.highlight-tall {
 
 li.highlight-wide {
   grid-column: span 2; }
+ 
+li.highlight-title {
+  grid-column: span 4; }
 
 img {
   display: block;
